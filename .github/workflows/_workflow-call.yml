@@ -7,6 +7,10 @@ on:
         description: 'Whether to post a PR comment on failure (and delete it on success)'
         type: boolean
         default: true
+      composer-options:
+        description: 'Additional options to pass to all Composer install steps (e.g. --ignore-platform-req=ext-openswoole)'
+        type: string
+        default: ''
       php-versions:
         description: 'JSON array of PHP versions to test against'
         type: string
@@ -95,14 +99,14 @@ jobs:
         if: steps.changes.outputs.files == 'true'
         uses: ramsey/composer-install@v3
         with:
-          composer-options: ${{ (inputs.php-version-bleeding-edge != '' && matrix.php == inputs.php-version-bleeding-edge) && '--ignore-platform-req=php+' || '' }} --prefer-dist --no-progress
+          composer-options: ${{ (inputs.php-version-bleeding-edge != '' && matrix.php == inputs.php-version-bleeding-edge) && '--ignore-platform-req=php+' || '' }} ${{ inputs.composer-options }} --prefer-dist --no-progress
           custom-cache-suffix: $(date -u "+%Y-%m")
 
       - name: Install PHPUnit Composer dependencies
         if: steps.changes.outputs.files == 'true'
         uses: ramsey/composer-install@v3
         with:
-          composer-options: ${{ (inputs.php-version-bleeding-edge != '' && matrix.php == inputs.php-version-bleeding-edge) && '--ignore-platform-req=php+' || '' }} --prefer-dist --no-progress
+          composer-options: ${{ (inputs.php-version-bleeding-edge != '' && matrix.php == inputs.php-version-bleeding-edge) && '--ignore-platform-req=php+' || '' }} ${{ inputs.composer-options }} --prefer-dist --no-progress
           custom-cache-suffix: $(date -u "+%Y-%m")
           working-directory: ${{ inputs.ci-directory }}
 
@@ -110,7 +114,7 @@ jobs:
         if: inputs.additional-directory != '' && steps.changes.outputs.files == 'true'
         uses: ramsey/composer-install@v3
         with:
-          composer-options: ${{ (inputs.php-version-bleeding-edge != '' && matrix.php == inputs.php-version-bleeding-edge) && '--ignore-platform-req=php+' || '' }} --prefer-dist --no-progress
+          composer-options: ${{ (inputs.php-version-bleeding-edge != '' && matrix.php == inputs.php-version-bleeding-edge) && '--ignore-platform-req=php+' || '' }} ${{ inputs.composer-options }} --prefer-dist --no-progress
           custom-cache-suffix: $(date -u "+%Y-%m")
           working-directory: ${{ inputs.additional-directory }}
 
