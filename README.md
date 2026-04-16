@@ -6,16 +6,66 @@
 
 PHPUnit custom assertions and test cases for the Valkyrja project.
 
+<p>
+    <a href="https://packagist.org/packages/valkyrja/phpunit"><img src="https://poser.pugx.org/valkyrja/phpunit/require/php" alt="PHP Version Require"></a>
+    <a href="https://packagist.org/packages/valkyrja/phpunit"><img src="https://poser.pugx.org/valkyrja/phpunit/v" alt="Latest Stable Version"></a>
+    <a href="https://packagist.org/packages/valkyrja/phpunit"><img src="https://poser.pugx.org/valkyrja/phpunit/license" alt="License"></a>
+    <!-- <a href="https://packagist.org/packages/valkyrja/phpunit"><img src="https://poser.pugx.org/valkyrja/phpunit/downloads" alt="Total Downloads"></a>-->
+    <a href="https://scrutinizer-ci.com/g/valkyrjaio/phpunit/?branch=master"><img src="https://scrutinizer-ci.com/g/valkyrjaio/phpunit/badges/quality-score.png?b=master" alt="Scrutinizer"></a>
+    <a href="https://coveralls.io/github/valkyrjaio/phpunit?branch=master"><img src="https://coveralls.io/repos/github/valkyrjaio/phpunit/badge.svg?branch=master" alt="Coverage Status" /></a>
+    <a href="https://shepherd.dev/github/valkyrjaio/phpunit"><img src="https://shepherd.dev/github/valkyrjaio/phpunit/coverage.svg" alt="Psalm Shepherd" /></a>
+    <a href="https://sonarcloud.io/summary/new_code?id=valkyrjaio_phpunit"><img src="https://sonarcloud.io/api/project_badges/measure?project=valkyrjaio_phpunit&metric=sqale_rating" alt="Maintainability Rating" /></a>
+</p>
+
+Build Status
+------------
+
+<table>
+    <tbody>
+        <tr>
+            <td>Linting</td>
+            <td>
+                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phpcodesniffer.yml?query=branch%3Amaster"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phpcodesniffer.yml/badge.svg?branch=master" alt="PHP Code Sniffer Build Status"></a>
+            </td>
+            <td>
+                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phpcsfixer.yml?query=branch%3Amaster"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phpcsfixer.yml/badge.svg?branch=master" alt="PHP CS Fixer Build Status"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Coding Rules</td>
+            <td>
+                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phparkitect.yml?query=branch%3Amaster"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phparkitect.yml/badge.svg?branch=master" alt="PHPArkitect Build Status"></a>
+            </td>
+            <td>
+                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/rector.yml?query=branch%3Amaster"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/rector.yml/badge.svg?branch=master" alt="Rector Build Status"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Static Analysis</td>
+            <td>
+                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phpstan.yml?query=branch%3Amaster"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phpstan.yml/badge.svg?branch=master" alt="PHPStan Build Status"></a>
+            </td>
+            <td>
+                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/psalm.yml?query=branch%3Amaster"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/psalm.yml/badge.svg?branch=master" alt="Psalm Build Status"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Testing</td>
+            <td>
+                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phpunit.yml?query=branch%3Amaster"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phpunit.yml/badge.svg?branch=master" alt="PHPUnit Build Status"></a>
+            </td>
+            <td>
+                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/validate-composer.yml?query=branch%3Amaster"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/validate-composer.yml/badge.svg?branch=master" alt="Validate Composer Build Status"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
 ## Overview
 
 This repository provides `ValkyrjaTestCase`, an abstract base class that extends
 PHPUnit's `TestCase` with additional assertion helpers used across the Valkyrja
 monorepo.
-
-## Requirements
-
-- PHP >= 8.4
-- [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit) ^13.0
 
 ## Installation
 
