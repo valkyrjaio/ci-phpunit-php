@@ -16,9 +16,7 @@
     }
   ],
   "require"           : {
-    "php" : ">=8.4"
-  },
-  "require-dev"       : {
+    "php"                         : ">=8.4",
     "fakerphp/faker"              : "^1.24.1",
     "mockery/mockery"             : "^1.6.12",
     "php-coveralls/php-coveralls" : "^2.9.1",
