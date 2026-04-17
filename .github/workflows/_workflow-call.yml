@@ -1,4 +1,4 @@
-name: PHPUnit
+name: PHPUnit Reusable Workflow
 
 on:
   workflow_call:
