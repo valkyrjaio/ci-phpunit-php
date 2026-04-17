@@ -148,3 +148,50 @@ Alias for `assertIsA`.
 ```php
 self::isA(ParentClass::class, ChildClass::class);
 ```
+
+## Workflows
+
+The [`_workflow-call.yml`](.github/workflows/_workflow-call.yml) reusable
+workflow runs PHPUnit against the calling repository's source. It is designed to
+be called from other repositories via `workflow_call`.
+
+### Inputs
+
+| Input                       | Type    | Default                | Description                                                                                                                                           |
+|-----------------------------|---------|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `paths`                     | string  | —                      | **Required.** YAML filter spec with two keys: `ci` (CI config files that trigger a base-branch fetch) and `files` (all files that trigger the check). |
+| `post-pr-comment`           | boolean | `true`                 | Post a PR comment on failure and remove it on success. Disable when the calling workflow handles its own reporting.                                   |
+| `composer-options`          | string  | `''`                   | Extra flags passed to every `composer install` step (e.g. `--ignore-platform-req=ext-openswoole`).                                                    |
+| `ci-directory`              | string  | `'.github/ci/phpunit'` | Path to the CI directory containing `composer.json` and the tool config.                                                                              |
+| `extensions`                | string  | `'mbstring, intl'`     | PHP extensions to install via `shivammathur/setup-php`.                                                                                               |
+| `php-versions`              | string  | `'["8.4"]'`            | JSON array of PHP versions to test against. Each version runs as a separate matrix job.                                                               |
+| `php-version-bleeding-edge` | string  | `''`                   | PHP version treated as bleeding edge — runs with `continue-on-error` and `--ignore-platform-req=php+`.                                                |
+| `coverage-php-version`      | string  | `'8.4'`                | PHP version that collects coverage (all other matrix versions run plain phpunit).                                                                     |
+
+### Usage
+
+```yaml
+jobs:
+  phpunit:
+    uses: valkyrjaio/phpunit/.github/workflows/_workflow-call.yml@master
+    permissions:
+      pull-requests: write
+      contents: read
+    with:
+      php-versions: '["8.4", "8.5"]'
+      php-version-bleeding-edge: '8.5'
+      paths: |
+        ci:
+          - '.github/ci/phpunit/**'
+          - '.github/workflows/phpunit.yml'
+        files:
+          - '.github/ci/phpunit/**'
+          - '.github/workflows/phpunit.yml'
+          - 'src/**/*.php'
+          - 'tests/**/*.php'
+          - 'composer.json'
+    secrets: inherit
+```
+
+`secrets: inherit` is required to pass the `VALKYRJA_GHA_APP_ID` and
+`VALKYRJA_GHA_PRIVATE_KEY` org secrets used for PR comments.
