@@ -4,79 +4,42 @@
 
 # Valkyrja PHPUnit
 
-PHPUnit custom assertions and test cases for the Valkyrja project.
+Shared PHPUnit configuration for Valkyrja PHP projects — custom assertions,
+a reusable test case base class, and a workflow that runs PHPUnit across
+consuming repositories.
 
 <p>
     <a href="https://packagist.org/packages/valkyrja/phpunit"><img src="https://poser.pugx.org/valkyrja/phpunit/require/php" alt="PHP Version Require"></a>
     <a href="https://packagist.org/packages/valkyrja/phpunit"><img src="https://poser.pugx.org/valkyrja/phpunit/v" alt="Latest Stable Version"></a>
     <a href="https://packagist.org/packages/valkyrja/phpunit"><img src="https://poser.pugx.org/valkyrja/phpunit/license" alt="License"></a>
-    <!-- <a href="https://packagist.org/packages/valkyrja/phpunit"><img src="https://poser.pugx.org/valkyrja/phpunit/downloads" alt="Total Downloads"></a>-->
-    <a href="https://scrutinizer-ci.com/g/valkyrjaio/phpunit/?branch=26.x"><img src="https://scrutinizer-ci.com/g/valkyrjaio/phpunit/badges/quality-score.png?b=26.x" alt="Scrutinizer"></a>
-    <a href="https://coveralls.io/github/valkyrjaio/phpunit?branch=26.x"><img src="https://coveralls.io/repos/github/valkyrjaio/phpunit/badge.svg?branch=26.x" alt="Coverage Status" /></a>
-    <a href="https://shepherd.dev/github/valkyrjaio/phpunit"><img src="https://shepherd.dev/github/valkyrjaio/phpunit/coverage.svg" alt="Psalm Shepherd" /></a>
+    <a href="https://github.com/valkyrjaio/ci-phpunit-php/actions/workflows/ci.yml?query=branch%3A26.x"><img src="https://github.com/valkyrjaio/ci-phpunit-php/actions/workflows/ci.yml/badge.svg?branch=26.x" alt="CI Status"></a>
+    <a href="https://scrutinizer-ci.com/g/valkyrjaio/ci-phpunit-php/?branch=26.x"><img src="https://scrutinizer-ci.com/g/valkyrjaio/ci-phpunit-php/badges/quality-score.png?b=26.x" alt="Scrutinizer"></a>
+    <a href="https://coveralls.io/github/valkyrjaio/ci-phpunit-php?branch=26.x"><img src="https://coveralls.io/repos/github/valkyrjaio/ci-phpunit-php/badge.svg?branch=26.x" alt="Coverage Status" /></a>
+    <a href="https://shepherd.dev/github/valkyrjaio/ci-phpunit-php"><img src="https://shepherd.dev/github/valkyrjaio/ci-phpunit-php/coverage.svg" alt="Psalm Shepherd" /></a>
     <a href="https://sonarcloud.io/summary/new_code?id=valkyrjaio_phpunit"><img src="https://sonarcloud.io/api/project_badges/measure?project=valkyrjaio_phpunit&metric=sqale_rating" alt="Maintainability Rating" /></a>
 </p>
 
-Build Status
+Overview
+--------
+
+This repository provides `ValkyrjaTestCase`, an abstract base class that
+extends PHPUnit's `TestCase` with additional assertion helpers used across
+the Valkyrja monorepo.
+
+Installation
 ------------
 
-<table>
-    <tbody>
-        <tr>
-            <td>Linting</td>
-            <td>
-                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phpcodesniffer.yml?query=branch%3A26.x"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phpcodesniffer.yml/badge.svg?branch=26.x" alt="PHP Code Sniffer Build Status"></a>
-            </td>
-            <td>
-                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phpcsfixer.yml?query=branch%3A26.x"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phpcsfixer.yml/badge.svg?branch=26.x" alt="PHP CS Fixer Build Status"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>Coding Rules</td>
-            <td>
-                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phparkitect.yml?query=branch%3A26.x"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phparkitect.yml/badge.svg?branch=26.x" alt="PHPArkitect Build Status"></a>
-            </td>
-            <td>
-                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/rector.yml?query=branch%3A26.x"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/rector.yml/badge.svg?branch=26.x" alt="Rector Build Status"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>Static Analysis</td>
-            <td>
-                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phpstan.yml?query=branch%3A26.x"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phpstan.yml/badge.svg?branch=26.x" alt="PHPStan Build Status"></a>
-            </td>
-            <td>
-                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/psalm.yml?query=branch%3A26.x"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/psalm.yml/badge.svg?branch=26.x" alt="Psalm Build Status"></a>
-            </td>
-        </tr>
-        <tr>
-            <td>Testing</td>
-            <td>
-                <a href="https://github.com/valkyrjaio/phpunit/actions/workflows/phpunit.yml?query=branch%3A26.x"><img src="https://github.com/valkyrjaio/phpunit/actions/workflows/phpunit.yml/badge.svg?branch=26.x" alt="PHPUnit Build Status"></a>
-            </td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-
-## Overview
-
-This repository provides `ValkyrjaTestCase`, an abstract base class that extends
-PHPUnit's `TestCase` with additional assertion helpers used across the Valkyrja
-monorepo.
-
-## Installation
-
-```bash
+```
 composer require valkyrja/phpunit
 ```
 
-## Usage
+Usage
+-----
 
-Extend `ValkyrjaTestCase` (or the provided `PhpUnitTestCase` subclass) in your
-test classes to gain access to the additional assertions:
+Extend `ValkyrjaTestCase` (or the provided `PhpUnitTestCase` subclass) in
+your test classes to gain access to the additional assertions:
 
-```php
+```
 use Valkyrja\PhpUnit\Abstract\ValkyrjaTestCase;
 
 final class MyTest extends ValkyrjaTestCase
@@ -88,14 +51,15 @@ final class MyTest extends ValkyrjaTestCase
 }
 ```
 
-## Additional Assertions
+Additional Assertions
+---------------------
 
 ### `assertIsA(string $expected, string $actual)`
 
-Asserts that `$actual` is `$expected` or one of its descendants/implementations,
-using `is_a()` with `$allow_string = true`.
+Asserts that `$actual` is `$expected` or one of its
+descendants/implementations, using `is_a()` with `$allow_string = true`.
 
-```php
+```
 self::assertIsA(ParentClass::class, ChildClass::class);
 self::assertIsA(MyInterface::class, MyClass::class);
 ```
@@ -104,7 +68,7 @@ self::assertIsA(MyInterface::class, MyClass::class);
 
 Asserts that `$method` exists on the given class name or object instance.
 
-```php
+```
 self::assertMethodExists(MyClass::class, 'myMethod');
 self::assertMethodExists(new MyClass(), 'myMethod');
 ```
@@ -113,7 +77,7 @@ self::assertMethodExists(new MyClass(), 'myMethod');
 
 Asserts that the given class name resolves to a loadable class.
 
-```php
+```
 self::assertClassExists(MyClass::class);
 ```
 
@@ -121,7 +85,7 @@ self::assertClassExists(MyClass::class);
 
 Asserts that the given name resolves to a loadable interface.
 
-```php
+```
 self::assertInterfaceExists(MyInterface::class);
 ```
 
@@ -129,7 +93,7 @@ self::assertInterfaceExists(MyInterface::class);
 
 Asserts that the given name resolves to a loadable trait.
 
-```php
+```
 self::assertTraitExists(MyTrait::class);
 ```
 
@@ -137,7 +101,7 @@ self::assertTraitExists(MyTrait::class);
 
 Asserts that `$actual` has the same number of elements as `$expected`.
 
-```php
+```
 self::assertSameCount($expectedCollection, $actualCollection);
 ```
 
@@ -145,15 +109,16 @@ self::assertSameCount($expectedCollection, $actualCollection);
 
 Alias for `assertIsA`.
 
-```php
+```
 self::isA(ParentClass::class, ChildClass::class);
 ```
 
-## Workflows
+Workflows
+---------
 
 The [`_workflow-call.yml`](.github/workflows/_workflow-call.yml) reusable
-workflow runs PHPUnit against the calling repository's source. It is designed to
-be called from other repositories via `workflow_call`.
+workflow runs PHPUnit against the calling repository's source. It is
+designed to be called from other repositories via `workflow_call`.
 
 ### Inputs
 
@@ -173,7 +138,7 @@ be called from other repositories via `workflow_call`.
 ```yaml
 jobs:
   phpunit:
-    uses: valkyrjaio/phpunit/.github/workflows/_workflow-call.yml@26.x
+    uses: valkyrjaio/ci-phpunit-php/.github/workflows/_workflow-call.yml@26.x
     permissions:
       pull-requests: write
       contents: read
@@ -195,3 +160,29 @@ jobs:
 
 `secrets: inherit` is required to pass the `VALKYRJA_GHA_APP_ID` and
 `VALKYRJA_GHA_PRIVATE_KEY` org secrets used for PR comments.
+
+Contributing
+------------
+
+See [`CONTRIBUTING.md`][contributing url] for the submission process and
+[`VOCABULARY.md`][vocabulary url] for the terminology used across Valkyrja.
+
+Security Issues
+---------------
+
+If you discover a security vulnerability, please follow our
+[disclosure procedure][security vulnerabilities url].
+
+License
+-------
+
+Licensed under the [MIT license][MIT license url]. See
+[`LICENSE.md`](./LICENSE.md).
+
+[contributing url]: https://github.com/valkyrjaio/.github/blob/master/CONTRIBUTING.md
+
+[vocabulary url]: https://github.com/valkyrjaio/.github/blob/master/VOCABULARY.md
+
+[security vulnerabilities url]: https://github.com/valkyrjaio/.github/blob/master/SECURITY.md
+
+[MIT license url]: https://opensource.org/licenses/MIT
