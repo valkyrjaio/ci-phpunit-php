@@ -33,12 +33,12 @@ final class ServiceProviderTestCaseTest extends ServiceProviderTestCase
 
     public function testGetPublishers(): void
     {
-        self::assertSame(ServiceProviderClass::publishers(), static::getPublishers());
+        self::assertSame(ServiceProviderClass::publishers(), self::getPublishers());
     }
 
     public function testPublishersDataProvider(): void
     {
-        $result = static::publishersDataProvider();
+        $result = self::publishersDataProvider();
 
         self::assertCount(2, $result);
         self::assertIsArray($result[0]);
@@ -46,7 +46,7 @@ final class ServiceProviderTestCaseTest extends ServiceProviderTestCase
 
     public function testProvidesDataProvider(): void
     {
-        $result = static::providesDataProvider();
+        $result = self::providesDataProvider();
 
         self::assertCount(2, $result);
         self::assertIsArray($result[0]);
