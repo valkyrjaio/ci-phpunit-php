@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of the Valkyrja Framework package.
+ * This file is part of the Valkyrja PHPUnit package.
  *
  * (c) Melech Mizrachi <melechmizrachi@gmail.com>
  *
@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Valkyrja\PhpUnit\Provider\Abstract;
+namespace Valkyrja\PhpUnit\Abstract;
 
 use Override;
 use PHPUnit\Framework\Attributes\DataProvider;
@@ -20,8 +20,8 @@ use Valkyrja\Application\Data\Contract\ConfigContract;
 use Valkyrja\Application\Env\Env;
 use Valkyrja\Application\Kernel\Contract\ApplicationContract;
 use Valkyrja\Container\Manager\Container;
+use Valkyrja\Container\Manager\Contract\ContainerContract;
 use Valkyrja\Container\Provider\Contract\ServiceProviderContract;
-use Valkyrja\PhpUnit\Abstract\ValkyrjaTestCase;
 
 use function array_map;
 use function class_exists;
@@ -36,24 +36,28 @@ abstract class ServiceProviderTestCase extends ValkyrjaTestCase
 
     protected Container $container;
 
+    /**
+     * @return array<array<callable(ContainerContract):void>>
+     */
     public static function publishersDataProvider(): array
     {
         return array_map(static fn ($item) => [$item], static::getPublishers());
     }
 
+    /**
+     * @return array<array<class-string>>
+     */
     public static function providesDataProvider(): array
     {
         return array_map(static fn ($item) => [$item], array_keys(static::getPublishers()));
     }
 
+    /**
+     * @return array<class-string, callable(ContainerContract):void>
+     */
     protected static function getPublishers(): array
     {
         return static::$provider::publishers();
-    }
-
-    protected static function getProvides(): array
-    {
-        return static::$provider::provides();
     }
 
     protected static function assertValidProvided(string $provided): void
@@ -86,6 +90,9 @@ abstract class ServiceProviderTestCase extends ValkyrjaTestCase
         self::assertValidProvided($provided);
     }
 
+    /**
+     * @param array<array-key, mixed> $callable
+     */
     #[DataProvider('publishersDataProvider')]
     public function testPublishers(array $callable): void
     {
