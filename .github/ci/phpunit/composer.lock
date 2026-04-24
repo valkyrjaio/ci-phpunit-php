@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9845ebdc2c7b8977c1e25682c915acc9",
+    "content-hash": "490cccd74d5a302d36aea99c080c57d7",
     "packages": [],
     "packages-dev": [
         {
@@ -851,21 +851,22 @@
         },
         {
             "name": "phpunit/php-code-coverage",
-            "version": "14.1.4",
+            "version": "14.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "13dd8d33c6a23da100acec635cd351bfa7ff1a98"
+                "reference": "4991e47adce8e31e554aee8fdaabfc3b1d60707d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/13dd8d33c6a23da100acec635cd351bfa7ff1a98",
-                "reference": "13dd8d33c6a23da100acec635cd351bfa7ff1a98",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/4991e47adce8e31e554aee8fdaabfc3b1d60707d",
+                "reference": "4991e47adce8e31e554aee8fdaabfc3b1d60707d",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-libxml": "*",
+                "ext-mbstring": "*",
                 "ext-xmlwriter": "*",
                 "nikic/php-parser": "^5.7.0",
                 "php": ">=8.4",
@@ -916,7 +917,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/php-code-coverage/issues",
                 "security": "https://github.com/sebastianbergmann/php-code-coverage/security/policy",
-                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/14.1.4"
+                "source": "https://github.com/sebastianbergmann/php-code-coverage/tree/14.1.6"
             },
             "funding": [
                 {
@@ -936,7 +937,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-23T17:00:20+00:00"
+            "time": "2026-04-24T13:10:08+00:00"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -1440,6 +1441,56 @@
             "time": "2021-11-05T16:47:00+00:00"
         },
         {
+            "name": "psr/event-dispatcher",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/event-dispatcher.git",
+                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/event-dispatcher/zipball/dbefd12671e8a14ec7f180cab83036ed26714bb0",
+                "reference": "dbefd12671e8a14ec7f180cab83036ed26714bb0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\EventDispatcher\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Standard interfaces for event handling.",
+            "keywords": [
+                "events",
+                "psr",
+                "psr-14"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/event-dispatcher/issues",
+                "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
+            },
+            "time": "2019-01-08T18:20:26+00:00"
+        },
+        {
             "name": "psr/http-client",
             "version": "1.0.3",
             "source": {
@@ -1598,6 +1649,62 @@
                 "source": "https://github.com/php-fig/http-message/tree/2.0"
             },
             "time": "2023-04-04T09:54:51+00:00"
+        },
+        {
+            "name": "psr/http-server-handler",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-handler.git",
+                "reference": "84c4fb66179be4caaf8e97bd239203245302e7d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/84c4fb66179be4caaf8e97bd239203245302e7d4",
+                "reference": "84c4fb66179be4caaf8e97bd239203245302e7d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0 || ^2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side request handler",
+            "keywords": [
+                "handler",
+                "http",
+                "http-interop",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response",
+                "server"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/http-server-handler/tree/1.0.2"
+            },
+            "time": "2023-04-10T20:06:20+00:00"
         },
         {
             "name": "psr/log",
@@ -3790,11 +3897,110 @@
                 }
             ],
             "time": "2025-12-08T11:19:18+00:00"
+        },
+        {
+            "name": "valkyrja/valkyrja",
+            "version": "26.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/valkyrjaio/valkyrja-php.git",
+                "reference": "c79de288fedf90cc708a91975b53abb40e22c8e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/c79de288fedf90cc708a91975b53abb40e22c8e0",
+                "reference": "c79de288fedf90cc708a91975b53abb40e22c8e0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.4",
+                "psr/container": "^2.0.2",
+                "psr/event-dispatcher": "^1.0.0",
+                "psr/http-message": "^2.0",
+                "psr/http-server-handler": "^1.0.2",
+                "psr/log": "^3.0.2"
+            },
+            "conflict": {
+                "filp/whoops": "<2.18.4",
+                "firebase/php-jwt": "<7.0.5",
+                "guzzlehttp/guzzle": "<7.10.0",
+                "league/flysystem": "<3.33.0",
+                "league/flysystem-aws-s3-v3": "<3.32.0",
+                "mailgun/mailgun-php": "<4.4.0",
+                "monolog/monolog": "<3.10.0",
+                "phpmailer/phpmailer": "<7.0.2",
+                "predis/predis": "<3.4.2",
+                "pusher/pusher-php-server": "<7.2.7",
+                "twig/twig": "<3.24.0",
+                "vonage/client-core": "<4.13.0"
+            },
+            "require-dev": {
+                "filp/whoops": "^2.18.4",
+                "firebase/php-jwt": "^7.0.5",
+                "guzzlehttp/guzzle": "^7.10.0",
+                "league/flysystem": "^3.33.0",
+                "league/flysystem-aws-s3-v3": "^3.32.0",
+                "mailgun/mailgun-php": "^4.4.0",
+                "monolog/monolog": "^3.10.0",
+                "phpmailer/phpmailer": "^7.0.2",
+                "predis/predis": "^3.4.2",
+                "pusher/pusher-php-server": "^7.2.7",
+                "twig/twig": "^3.24.0",
+                "vonage/client-core": "^4.13.0"
+            },
+            "suggest": {
+                "ext-curl": "Required to use the default Client adapter (*)",
+                "ext-pdo": "Required to use the default ORM adapter (*)",
+                "ext-redis": "Required to use the default Cache store (^4.0|^5.0).",
+                "ext-sodium": "Required to use the default Crypt adapters and/or JWT EdDSA Algorithm (*)",
+                "filp/whoops": "Required to use the default Throwable handler (^2.18.4)",
+                "firebase/php-jwt": "Required to use the default Jwt adapter (^7.0.5)",
+                "guzzlehttp/guzzle": "Required to use the default Client adapter (^7.10.0).",
+                "league/flysystem": "Required to use the default Filesystem adapter (^3.33.0).",
+                "league/flysystem-aws-s3-v3": "Required to use the s3 Filesystem adapter (^3.32.0)",
+                "mailgun/mailgun-php": "Required to use the Mailgun Mail adapter (^4.4.0).",
+                "monolog/monolog": "Required to use the default Log adapter (^3.10.0).",
+                "phpmailer/phpmailer": "Required to use the default Mail adapter (^7.0.2).",
+                "predis/predis": "Required to use the Redis Cache store (^3.4.2).",
+                "pusher/pusher-php-server": "Required to use the Pusher Broadcast adapter (^7.2.7).",
+                "twig/twig": "Required to use the Twig View engine (^3.24.0).",
+                "vonage/client-core": "Required to use the default SMS adapter (^4.13.0)."
+            },
+            "default-branch": true,
+            "type": "project",
+            "autoload": {
+                "psr-4": {
+                    "Valkyrja\\": "src/Valkyrja"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Melech Mizrachi",
+                    "email": "melechmizrachi@gmail.com"
+                }
+            ],
+            "description": "The Valkyrja Framework.",
+            "homepage": "https://www.valkyrja.io",
+            "keywords": [
+                "framework",
+                "valkyrja"
+            ],
+            "support": {
+                "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
+                "source": "https://github.com/valkyrjaio/valkyrja-php/tree/26.x"
+            },
+            "time": "2026-04-23T19:38:59+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {},
+    "stability-flags": {
+        "valkyrja/valkyrja": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
