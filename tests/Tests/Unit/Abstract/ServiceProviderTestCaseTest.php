@@ -41,7 +41,7 @@ final class ServiceProviderTestCaseTest extends ServiceProviderTestCase
         $result = self::publishersDataProvider();
 
         self::assertCount(2, $result);
-        self::assertIsArray($result[0]);
+        self::assertIsArray(array_values($result)[0]);
     }
 
     public function testProvidesDataProvider(): void
@@ -49,6 +49,6 @@ final class ServiceProviderTestCaseTest extends ServiceProviderTestCase
         $result = self::providesDataProvider();
 
         self::assertCount(2, $result);
-        self::assertIsArray($result[0]);
+        self::assertIsArray(array_values($result)[0]);
     }
 }
