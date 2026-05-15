@@ -1,6 +1,10 @@
 # Release Notes for 26.x
 
-## [Unreleased](https://github.com/valkyrjaio/phpunit/compare/v26.3.1...26.x)
+## [Unreleased](https://github.com/valkyrjaio/phpunit/compare/v26.4.0...26.x)
+
+## [v26.4.0](https://github.com/valkyrjaio/phpunit/compare/v26.3.1...v26.4.0) - 2026-05-15
+
+* [PhpUnit] Update ServiceProviderTestCase to call publishers() as instance method by [@MelechMizrachi](https://github.com/MelechMizrachi) in https://github.com/valkyrjaio/ci-phpunit-php/pull/39
 
 ## [v26.3.1](https://github.com/valkyrjaio/phpunit/compare/v26.3.0...v26.3.1) - 2026-05-15
 
