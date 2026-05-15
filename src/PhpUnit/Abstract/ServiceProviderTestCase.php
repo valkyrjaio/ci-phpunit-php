@@ -57,7 +57,7 @@ abstract class ServiceProviderTestCase extends ValkyrjaTestCase
      */
     protected static function getPublishers(): array
     {
-        return static::$provider::publishers();
+        return (new (static::$provider)())->publishers();
     }
 
     protected static function assertValidProvided(string $provided): void
