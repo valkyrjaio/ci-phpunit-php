@@ -27,13 +27,13 @@ final class ServiceProviderTestCaseTest extends ServiceProviderTestCase
 
     public function testExpectedPublishers(): void
     {
-        self::assertArrayHasKey(ServiceProvidedClass::class, ServiceProviderClass::publishers());
-        self::assertArrayHasKey(ServiceProvidedInterface::class, ServiceProviderClass::publishers());
+        self::assertArrayHasKey(ServiceProvidedClass::class, new ServiceProviderClass()->publishers());
+        self::assertArrayHasKey(ServiceProvidedInterface::class, new ServiceProviderClass()->publishers());
     }
 
     public function testGetPublishers(): void
     {
-        self::assertSame(ServiceProviderClass::publishers(), self::getPublishers());
+        self::assertSame(new ServiceProviderClass()->publishers(), self::getPublishers());
     }
 
     public function testPublishersDataProvider(): void

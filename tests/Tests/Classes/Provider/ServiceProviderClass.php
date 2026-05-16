@@ -25,15 +25,6 @@ final class ServiceProviderClass implements ServiceProviderContract
 
     public static bool $publishInterfaceCalled = false;
 
-    #[Override]
-    public static function publishers(): array
-    {
-        return [
-            ServiceProvidedClass::class     => [self::class, 'publish'],
-            ServiceProvidedInterface::class => [self::class, 'publishInterface'],
-        ];
-    }
-
     public static function publish(object $providerAware): void
     {
         self::$publishCalled = true;
@@ -42,5 +33,14 @@ final class ServiceProviderClass implements ServiceProviderContract
     public static function publishInterface(object $providerAware): void
     {
         self::$publishInterfaceCalled = true;
+    }
+
+    #[Override]
+    public function publishers(): array
+    {
+        return [
+            ServiceProvidedClass::class     => [self::class, 'publish'],
+            ServiceProvidedInterface::class => [self::class, 'publishInterface'],
+        ];
     }
 }

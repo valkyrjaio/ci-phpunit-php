@@ -319,16 +319,16 @@
         },
         {
             "name": "amphp/parallel",
-            "version": "v2.3.4",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/parallel.git",
-                "reference": "3ad45d1cff1bfbfe832c79671e6a4a1017dd9921"
+                "reference": "37f5b2754fadc229c00f9416bd68fb8d04529a81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/parallel/zipball/3ad45d1cff1bfbfe832c79671e6a4a1017dd9921",
-                "reference": "3ad45d1cff1bfbfe832c79671e6a4a1017dd9921",
+                "url": "https://api.github.com/repos/amphp/parallel/zipball/37f5b2754fadc229c00f9416bd68fb8d04529a81",
+                "reference": "37f5b2754fadc229c00f9416bd68fb8d04529a81",
                 "shasum": ""
             },
             "require": {
@@ -391,7 +391,7 @@
             ],
             "support": {
                 "issues": "https://github.com/amphp/parallel/issues",
-                "source": "https://github.com/amphp/parallel/tree/v2.3.4"
+                "source": "https://github.com/amphp/parallel/tree/v2.4.0"
             },
             "funding": [
                 {
@@ -399,7 +399,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-06T19:26:51+00:00"
+            "time": "2026-05-16T16:54:01+00:00"
         },
         {
             "name": "amphp/parser",
@@ -2235,16 +2235,16 @@
         },
         {
             "name": "revolt/event-loop",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/revoltphp/event-loop.git",
-                "reference": "b6fc06dce8e9b523c9946138fa5e62181934f91c"
+                "reference": "44061cf513e53c6200372fc935ac42271566295d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/revoltphp/event-loop/zipball/b6fc06dce8e9b523c9946138fa5e62181934f91c",
-                "reference": "b6fc06dce8e9b523c9946138fa5e62181934f91c",
+                "url": "https://api.github.com/repos/revoltphp/event-loop/zipball/44061cf513e53c6200372fc935ac42271566295d",
+                "reference": "44061cf513e53c6200372fc935ac42271566295d",
                 "shasum": ""
             },
             "require": {
@@ -2254,7 +2254,7 @@
                 "ext-json": "*",
                 "jetbrains/phpstorm-stubs": "^2019.3",
                 "phpunit/phpunit": "^9",
-                "psalm/phar": "^5.15"
+                "psalm/phar": "6.16.*"
             },
             "type": "library",
             "extra": {
@@ -2301,9 +2301,9 @@
             ],
             "support": {
                 "issues": "https://github.com/revoltphp/event-loop/issues",
-                "source": "https://github.com/revoltphp/event-loop/tree/v1.0.8"
+                "source": "https://github.com/revoltphp/event-loop/tree/v1.0.9"
             },
-            "time": "2025-08-27T21:33:23+00:00"
+            "time": "2026-05-16T17:55:38+00:00"
         },
         {
             "name": "sebastian/diff",
@@ -3328,12 +3328,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "63daf963a2c6672101649efc63e52645f1d5cbe9"
+                "reference": "9ac7d0a83d40de0dacb7c8447b0517264f5a605a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/63daf963a2c6672101649efc63e52645f1d5cbe9",
-                "reference": "63daf963a2c6672101649efc63e52645f1d5cbe9",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/9ac7d0a83d40de0dacb7c8447b0517264f5a605a",
+                "reference": "9ac7d0a83d40de0dacb7c8447b0517264f5a605a",
                 "shasum": ""
             },
             "require": {
@@ -3348,11 +3348,11 @@
                 "filp/whoops": "<2.18.4",
                 "firebase/php-jwt": "<7.0.5",
                 "guzzlehttp/guzzle": "<7.10.0",
-                "league/flysystem": "<3.33.0",
-                "league/flysystem-aws-s3-v3": "<3.32.0",
+                "league/flysystem": "<3.34.0",
+                "league/flysystem-aws-s3-v3": "<3.34.0",
                 "mailgun/mailgun-php": "<4.5.0",
                 "monolog/monolog": "<3.10.0",
-                "phpmailer/phpmailer": "<7.0.2",
+                "phpmailer/phpmailer": "<7.1.0",
                 "predis/predis": "<3.4.2",
                 "pusher/pusher-php-server": "<7.2.7",
                 "twig/twig": "<3.24.0",
@@ -3362,11 +3362,11 @@
                 "filp/whoops": "^2.18.4",
                 "firebase/php-jwt": "^7.0.5",
                 "guzzlehttp/guzzle": "^7.10.0",
-                "league/flysystem": "^3.33.0",
-                "league/flysystem-aws-s3-v3": "^3.32.0",
+                "league/flysystem": "^3.34.0",
+                "league/flysystem-aws-s3-v3": "^3.34.0",
                 "mailgun/mailgun-php": "^4.5.0",
                 "monolog/monolog": "^3.10.0",
-                "phpmailer/phpmailer": "^7.0.2",
+                "phpmailer/phpmailer": "^7.1.0",
                 "predis/predis": "^3.4.2",
                 "pusher/pusher-php-server": "^7.2.7",
                 "twig/twig": "^3.24.0",
@@ -3380,11 +3380,11 @@
                 "filp/whoops": "Required to use the default Throwable handler (^2.18.4)",
                 "firebase/php-jwt": "Required to use the default Jwt adapter (^7.0.5)",
                 "guzzlehttp/guzzle": "Required to use the default Client adapter (^7.10.0).",
-                "league/flysystem": "Required to use the default Filesystem adapter (^3.33.0).",
-                "league/flysystem-aws-s3-v3": "Required to use the s3 Filesystem adapter (^3.32.0)",
+                "league/flysystem": "Required to use the default Filesystem adapter (^3.34.0).",
+                "league/flysystem-aws-s3-v3": "Required to use the s3 Filesystem adapter (^3.34.0)",
                 "mailgun/mailgun-php": "Required to use the Mailgun Mail adapter (^4.5.0).",
                 "monolog/monolog": "Required to use the default Log adapter (^3.10.0).",
-                "phpmailer/phpmailer": "Required to use the default Mail adapter (^7.0.2).",
+                "phpmailer/phpmailer": "Required to use the default Mail adapter (^7.1.0).",
                 "predis/predis": "Required to use the Redis Cache store (^3.4.2).",
                 "pusher/pusher-php-server": "Required to use the Pusher Broadcast adapter (^7.2.7).",
                 "twig/twig": "Required to use the Twig View engine (^3.24.0).",
@@ -3415,9 +3415,9 @@
             ],
             "support": {
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
-                "source": "https://github.com/valkyrjaio/valkyrja-php/tree/v26.2.0"
+                "source": "https://github.com/valkyrjaio/valkyrja-php/tree/v26.3.0"
             },
-            "time": "2026-05-07T21:44:34+00:00"
+            "time": "2026-05-15T20:30:15+00:00"
         },
         {
             "name": "vimeo/psalm",
