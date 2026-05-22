@@ -21,7 +21,7 @@
     "mockery/mockery"             : "^1.6.12",
     "php-coveralls/php-coveralls" : "^2.9.1",
     "phpunit/phpcov"              : "^13.0.1",
-    "phpunit/phpunit"             : "^13.1.10"
+    "phpunit/phpunit"             : "^13.1.11"
   },
   "autoload"          : {
     "psr-4" : {
