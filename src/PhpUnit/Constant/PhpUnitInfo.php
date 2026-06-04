@@ -20,12 +20,12 @@ final class PhpUnitInfo
      *
      * @var non-empty-string
      */
-    public const string VERSION = '26.4.1';
+    public const string VERSION = '26.4.2';
 
     /**
      * The PhpUnit package version build datetime.
      *
      * @var non-empty-string
      */
-    public const string VERSION_BUILD_DATE_TIME = 'May 27 2026 14:31:30 MST';
+    public const string VERSION_BUILD_DATE_TIME = 'June 4 2026 09:46:15 MST';
 }
