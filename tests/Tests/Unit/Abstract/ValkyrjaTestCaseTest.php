@@ -83,7 +83,7 @@ final class ValkyrjaTestCaseTest extends PhpUnitTestCase
     {
         $this->expectException(AssertionFailedError::class);
         /** @var class-string $nonExistentClass */
-        $nonExistentClass = 'Valkyrja\PhpUnit\Tests\Classes\NonExistentClass';
+        $nonExistentClass = 'Valkyrja\PhpUnit\Tests\Fixtures\NonExistentClass';
         self::assertClassExists($nonExistentClass);
     }
 
@@ -104,7 +104,7 @@ final class ValkyrjaTestCaseTest extends PhpUnitTestCase
     public function testAssertInterfaceExistsFails(): void
     {
         $this->expectException(AssertionFailedError::class);
-        self::assertInterfaceExists('Valkyrja\PhpUnit\Tests\Classes\NonExistentInterface');
+        self::assertInterfaceExists('Valkyrja\PhpUnit\Tests\Fixtures\NonExistentInterface');
     }
 
     // endregion
@@ -119,7 +119,7 @@ final class ValkyrjaTestCaseTest extends PhpUnitTestCase
     public function testAssertTraitExistsFails(): void
     {
         $this->expectException(AssertionFailedError::class);
-        self::assertTraitExists('Valkyrja\PhpUnit\Tests\Classes\NonExistentTrait');
+        self::assertTraitExists('Valkyrja\PhpUnit\Tests\Fixtures\NonExistentTrait');
     }
 
     // endregion
