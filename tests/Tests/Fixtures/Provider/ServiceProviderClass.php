@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Valkyrja\PhpUnit\Tests\Classes\Provider;
+namespace Valkyrja\PhpUnit\Tests\Fixtures\Provider;
 
 use Override;
 use Valkyrja\Container\Provider\Contract\ServiceProviderContract;

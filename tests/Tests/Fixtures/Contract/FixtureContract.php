@@ -11,11 +11,8 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Valkyrja\PhpUnit\Tests\Classes\Provider;
+namespace Valkyrja\PhpUnit\Tests\Fixtures\Contract;
 
-/**
- * Class ServiceProvidedClass.
- */
-final class ServiceProvidedClass
+interface FixtureContract
 {
 }
