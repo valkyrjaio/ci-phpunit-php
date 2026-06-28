@@ -18,6 +18,8 @@ use Valkyrja\PhpUnit\Tests\Classes\Provider\ServiceProvidedClass;
 use Valkyrja\PhpUnit\Tests\Classes\Provider\ServiceProvidedInterface;
 use Valkyrja\PhpUnit\Tests\Classes\Provider\ServiceProviderClass;
 
+use function array_values;
+
 /**
  * Tests for ServiceProviderTestCase.
  */

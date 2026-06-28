@@ -23,6 +23,7 @@ use Valkyrja\Container\Manager\Container;
 use Valkyrja\Container\Manager\Contract\ContainerContract;
 use Valkyrja\Container\Provider\Contract\ServiceProviderContract;
 
+use function array_keys;
 use function array_map;
 use function class_exists;
 
