@@ -16,11 +16,11 @@ namespace Valkyrja\PhpUnit\Tests\Unit\Abstract;
 use Countable;
 use PHPUnit\Framework\AssertionFailedError;
 use Valkyrja\PhpUnit\Tests\Abstract\PhpUnitTestCase;
-use Valkyrja\PhpUnit\Tests\Classes\Contract\FixtureContract;
-use Valkyrja\PhpUnit\Tests\Classes\FixtureChildClass;
-use Valkyrja\PhpUnit\Tests\Classes\FixtureCountableClass;
-use Valkyrja\PhpUnit\Tests\Classes\FixtureParentClass;
-use Valkyrja\PhpUnit\Tests\Classes\Trait\FixtureTrait;
+use Valkyrja\PhpUnit\Tests\Fixtures\Contract\FixtureContract;
+use Valkyrja\PhpUnit\Tests\Fixtures\FixtureChildClass;
+use Valkyrja\PhpUnit\Tests\Fixtures\FixtureCountableClass;
+use Valkyrja\PhpUnit\Tests\Fixtures\FixtureParentClass;
+use Valkyrja\PhpUnit\Tests\Fixtures\Trait\FixtureTrait;
 
 /**
  * Tests for ValkyrjaTestCase.

@@ -11,8 +11,8 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Valkyrja\PhpUnit\Tests\Classes\Contract;
+namespace Valkyrja\PhpUnit\Tests\Fixtures;
 
-interface FixtureContract
+final class FixtureChildClass extends FixtureParentClass
 {
 }

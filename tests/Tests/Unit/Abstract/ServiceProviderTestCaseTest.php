@@ -14,9 +14,9 @@ declare(strict_types=1);
 namespace Valkyrja\PhpUnit\Tests\Unit\Abstract;
 
 use Valkyrja\PhpUnit\Abstract\ServiceProviderTestCase;
-use Valkyrja\PhpUnit\Tests\Classes\Provider\ServiceProvidedClass;
-use Valkyrja\PhpUnit\Tests\Classes\Provider\ServiceProvidedInterface;
-use Valkyrja\PhpUnit\Tests\Classes\Provider\ServiceProviderClass;
+use Valkyrja\PhpUnit\Tests\Fixtures\Provider\ServiceProvidedClass;
+use Valkyrja\PhpUnit\Tests\Fixtures\Provider\ServiceProvidedInterface;
+use Valkyrja\PhpUnit\Tests\Fixtures\Provider\ServiceProviderClass;
 
 /**
  * Tests for ServiceProviderTestCase.

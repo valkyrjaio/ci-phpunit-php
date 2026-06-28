@@ -11,18 +11,11 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Valkyrja\PhpUnit\Tests\Classes;
+namespace Valkyrja\PhpUnit\Tests\Fixtures\Provider;
 
-use Countable;
-
-final class FixtureCountableClass implements Countable
+/**
+ * Interface ServiceProvidedInterface.
+ */
+interface ServiceProvidedInterface
 {
-    public function __construct(private readonly int $count)
-    {
-    }
-
-    public function count(): int
-    {
-        return $this->count;
-    }
 }

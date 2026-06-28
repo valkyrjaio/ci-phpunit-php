@@ -11,8 +11,11 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Valkyrja\PhpUnit\Tests\Classes;
+namespace Valkyrja\PhpUnit\Tests\Fixtures\Provider;
 
-final class FixtureChildClass extends FixtureParentClass
+/**
+ * Class ServiceProvidedClass.
+ */
+final class ServiceProvidedClass
 {
 }

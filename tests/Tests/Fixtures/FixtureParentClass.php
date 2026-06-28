@@ -11,10 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Valkyrja\PhpUnit\Tests\Classes;
+namespace Valkyrja\PhpUnit\Tests\Fixtures;
 
-use Valkyrja\PhpUnit\Tests\Classes\Contract\FixtureContract;
-use Valkyrja\PhpUnit\Tests\Classes\Trait\FixtureTrait;
+use Valkyrja\PhpUnit\Tests\Fixtures\Contract\FixtureContract;
+use Valkyrja\PhpUnit\Tests\Fixtures\Trait\FixtureTrait;
 
 class FixtureParentClass implements FixtureContract
 {
