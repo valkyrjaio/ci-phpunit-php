@@ -17,9 +17,9 @@ use Countable;
 use PHPUnit\Framework\AssertionFailedError;
 use Valkyrja\PhpUnit\Tests\Abstract\PhpUnitTestCase;
 use Valkyrja\PhpUnit\Tests\Fixtures\Contract\FixtureContract;
-use Valkyrja\PhpUnit\Tests\Fixtures\FixtureChildClass;
-use Valkyrja\PhpUnit\Tests\Fixtures\FixtureCountableClass;
-use Valkyrja\PhpUnit\Tests\Fixtures\FixtureParentClass;
+use Valkyrja\PhpUnit\Tests\Fixtures\FixtureChildFixture;
+use Valkyrja\PhpUnit\Tests\Fixtures\FixtureCountableFixture;
+use Valkyrja\PhpUnit\Tests\Fixtures\FixtureParentFixture;
 use Valkyrja\PhpUnit\Tests\Fixtures\Trait\FixtureTrait;
 
 /**
@@ -31,23 +31,23 @@ final class ValkyrjaTestCaseTest extends PhpUnitTestCase
 
     public function testAssertIsAWithSameClass(): void
     {
-        self::assertIsA(FixtureParentClass::class, FixtureParentClass::class);
+        self::assertIsA(FixtureParentFixture::class, FixtureParentFixture::class);
     }
 
     public function testAssertIsAWithSubclass(): void
     {
-        self::assertIsA(FixtureParentClass::class, FixtureChildClass::class);
+        self::assertIsA(FixtureParentFixture::class, FixtureChildFixture::class);
     }
 
     public function testAssertIsAWithInterfaceImplementation(): void
     {
-        self::assertIsA(FixtureContract::class, FixtureParentClass::class);
+        self::assertIsA(FixtureContract::class, FixtureParentFixture::class);
     }
 
     public function testAssertIsAFailsWhenNotRelated(): void
     {
         $this->expectException(AssertionFailedError::class);
-        self::assertIsA(FixtureChildClass::class, FixtureParentClass::class);
+        self::assertIsA(FixtureChildFixture::class, FixtureParentFixture::class);
     }
 
     // endregion
@@ -56,18 +56,18 @@ final class ValkyrjaTestCaseTest extends PhpUnitTestCase
 
     public function testAssertMethodExistsWithClassName(): void
     {
-        self::assertMethodExists(FixtureParentClass::class, 'fixtureMethod');
+        self::assertMethodExists(FixtureParentFixture::class, 'fixtureMethod');
     }
 
     public function testAssertMethodExistsWithObject(): void
     {
-        self::assertMethodExists(new FixtureParentClass(), 'fixtureMethod');
+        self::assertMethodExists(new FixtureParentFixture(), 'fixtureMethod');
     }
 
     public function testAssertMethodExistsFailsWhenMissing(): void
     {
         $this->expectException(AssertionFailedError::class);
-        self::assertMethodExists(FixtureParentClass::class, 'nonExistentMethod');
+        self::assertMethodExists(FixtureParentFixture::class, 'nonExistentMethod');
     }
 
     // endregion
@@ -76,7 +76,7 @@ final class ValkyrjaTestCaseTest extends PhpUnitTestCase
 
     public function testAssertClassExists(): void
     {
-        self::assertClassExists(FixtureParentClass::class);
+        self::assertClassExists(FixtureParentFixture::class);
     }
 
     public function testAssertClassExistsFails(): void
@@ -128,23 +128,23 @@ final class ValkyrjaTestCaseTest extends PhpUnitTestCase
 
     public function testIsAWithSameClass(): void
     {
-        self::isA(FixtureParentClass::class, FixtureParentClass::class);
+        self::isA(FixtureParentFixture::class, FixtureParentFixture::class);
     }
 
     public function testIsAWithSubclass(): void
     {
-        self::isA(FixtureParentClass::class, FixtureChildClass::class);
+        self::isA(FixtureParentFixture::class, FixtureChildFixture::class);
     }
 
     public function testIsAWithInterfaceImplementation(): void
     {
-        self::isA(FixtureContract::class, FixtureParentClass::class);
+        self::isA(FixtureContract::class, FixtureParentFixture::class);
     }
 
     public function testIsAFailsWhenNotRelated(): void
     {
         $this->expectException(AssertionFailedError::class);
-        self::isA(FixtureChildClass::class, FixtureParentClass::class);
+        self::isA(FixtureChildFixture::class, FixtureParentFixture::class);
     }
 
     // endregion
@@ -163,14 +163,14 @@ final class ValkyrjaTestCaseTest extends PhpUnitTestCase
 
     public function testAssertSameCountWithCountables(): void
     {
-        $expected = new FixtureCountableClass(3);
-        $actual   = new FixtureCountableClass(3);
+        $expected = new FixtureCountableFixture(3);
+        $actual   = new FixtureCountableFixture(3);
         self::assertSameCount($expected, $actual);
     }
 
     public function testAssertSameCountWithMixedArrayAndCountable(): void
     {
-        self::assertSameCount([1, 2], new FixtureCountableClass(2));
+        self::assertSameCount([1, 2], new FixtureCountableFixture(2));
     }
 
     public function testAssertSameCountFailsWithDifferentCounts(): void

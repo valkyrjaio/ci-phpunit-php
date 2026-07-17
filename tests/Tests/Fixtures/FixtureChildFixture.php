@@ -13,14 +13,6 @@ declare(strict_types=1);
 
 namespace Valkyrja\PhpUnit\Tests\Fixtures;
 
-use Valkyrja\PhpUnit\Tests\Fixtures\Contract\FixtureContract;
-use Valkyrja\PhpUnit\Tests\Fixtures\Trait\FixtureTrait;
-
-class FixtureParentClass implements FixtureContract
+final class FixtureChildFixture extends FixtureParentFixture
 {
-    use FixtureTrait;
-
-    public function fixtureMethod(): void
-    {
-    }
 }

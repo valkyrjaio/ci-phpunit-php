@@ -17,9 +17,9 @@ use Override;
 use Valkyrja\Container\Provider\Contract\ServiceProviderContract;
 
 /**
- * Class ServiceProviderClass.
+ * Class ServiceProviderFixture.
  */
-final class ServiceProviderClass implements ServiceProviderContract
+final class ServiceProviderFixture implements ServiceProviderContract
 {
     public static bool $publishCalled = false;
 
@@ -39,7 +39,7 @@ final class ServiceProviderClass implements ServiceProviderContract
     public function publishers(): array
     {
         return [
-            ServiceProvidedClass::class     => [self::class, 'publish'],
+            ServiceProvidedFixture::class   => [self::class, 'publish'],
             ServiceProvidedInterface::class => [self::class, 'publishInterface'],
         ];
     }
