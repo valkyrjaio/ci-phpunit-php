@@ -14,9 +14,9 @@ declare(strict_types=1);
 namespace Valkyrja\PhpUnit\Tests\Unit\Abstract;
 
 use Valkyrja\PhpUnit\Abstract\ServiceProviderTestCase;
-use Valkyrja\PhpUnit\Tests\Fixtures\Provider\ServiceProvidedClass;
+use Valkyrja\PhpUnit\Tests\Fixtures\Provider\ServiceProvidedFixture;
 use Valkyrja\PhpUnit\Tests\Fixtures\Provider\ServiceProvidedInterface;
-use Valkyrja\PhpUnit\Tests\Fixtures\Provider\ServiceProviderClass;
+use Valkyrja\PhpUnit\Tests\Fixtures\Provider\ServiceProviderFixture;
 
 use function array_values;
 
@@ -25,17 +25,17 @@ use function array_values;
  */
 final class ServiceProviderTestCaseTest extends ServiceProviderTestCase
 {
-    protected static string $provider = ServiceProviderClass::class;
+    protected static string $provider = ServiceProviderFixture::class;
 
     public function testExpectedPublishers(): void
     {
-        self::assertArrayHasKey(ServiceProvidedClass::class, new ServiceProviderClass()->publishers());
-        self::assertArrayHasKey(ServiceProvidedInterface::class, new ServiceProviderClass()->publishers());
+        self::assertArrayHasKey(ServiceProvidedFixture::class, new ServiceProviderFixture()->publishers());
+        self::assertArrayHasKey(ServiceProvidedInterface::class, new ServiceProviderFixture()->publishers());
     }
 
     public function testGetPublishers(): void
     {
-        self::assertSame(new ServiceProviderClass()->publishers(), self::getPublishers());
+        self::assertSame(new ServiceProviderFixture()->publishers(), self::getPublishers());
     }
 
     public function testPublishersDataProvider(): void

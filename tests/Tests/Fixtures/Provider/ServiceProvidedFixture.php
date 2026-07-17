@@ -14,8 +14,8 @@ declare(strict_types=1);
 namespace Valkyrja\PhpUnit\Tests\Fixtures\Provider;
 
 /**
- * Class ServiceProvidedClass.
+ * Class ServiceProvidedFixture.
  */
-final class ServiceProvidedClass
+final class ServiceProvidedFixture
 {
 }

@@ -15,7 +15,7 @@ namespace Valkyrja\PhpUnit\Tests\Fixtures;
 
 use Countable;
 
-final class FixtureCountableClass implements Countable
+final class FixtureCountableFixture implements Countable
 {
     public function __construct(private readonly int $count)
     {
