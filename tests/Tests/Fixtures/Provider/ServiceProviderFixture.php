@@ -39,7 +39,7 @@ final class ServiceProviderFixture implements ServiceProviderContract
     public function publishers(): array
     {
         return [
-            ServiceProvidedFixture::class     => [self::class, 'publish'],
+            ServiceProvidedFixture::class   => [self::class, 'publish'],
             ServiceProvidedInterface::class => [self::class, 'publishInterface'],
         ];
     }
