@@ -33,11 +33,3 @@ jobs:
         ]
       info-class-path: src/PhpUnit/Constant/PhpUnitInfo.php
       info-class-name: PhpUnitInfo
-
-  update-refs:
-    name: Update Workflow Refs
-    needs: release
-    uses: valkyrjaio/.github/.github/workflows/_update-workflow-refs.yml@3812be12684beea1fbb95888e437a220f0813342
-    secrets: inherit
-    with:
-      source-repo: ${{ github.event.repository.name }}
