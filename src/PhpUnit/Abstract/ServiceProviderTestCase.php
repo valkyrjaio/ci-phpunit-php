@@ -17,7 +17,6 @@ use Override;
 use PHPUnit\Framework\Attributes\DataProvider;
 use Valkyrja\Application\Data\Config;
 use Valkyrja\Application\Data\Contract\ConfigContract;
-use Valkyrja\Application\Env\Env;
 use Valkyrja\Application\Kernel\Contract\ApplicationContract;
 use Valkyrja\Container\Manager\Container;
 use Valkyrja\Container\Manager\Contract\ContainerContract;
@@ -77,7 +76,6 @@ abstract class ServiceProviderTestCase extends ValkyrjaTestCase
     {
         $this->container = new Container();
 
-        $this->container->setSingleton(Env::class, new Env());
         $this->container->setSingleton(ApplicationContract::class, self::createStub(ApplicationContract::class));
         $this->container->setSingleton(ConfigContract::class, new Config());
     }
