@@ -1,5 +1,5 @@
 {
-  "name"              : "valkyrja/phpunit",
+  "name"              : "valkyrja/ci-phpunit",
   "type"              : "project",
   "description"       : "PHPUnit for the Valkyrja Project.",
   "homepage"          : "https://www.valkyrja.io/",
