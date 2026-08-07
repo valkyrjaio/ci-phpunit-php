@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bdbbc2577f1f92920d87cfa018846e84",
+    "content-hash": "4be7cda69e3c1b71a10f52a9699b7c97",
     "packages": [],
     "packages-dev": [
         {
@@ -4084,16 +4084,16 @@
         },
         {
             "name": "valkyrja/valkyrja",
-            "version": "26.x-dev",
+            "version": "v26.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "de9b159d37c2cec27b24a1bd0e33023b0b3614d0"
+                "reference": "1177a3032d3991653428de44193eca93f16accc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/de9b159d37c2cec27b24a1bd0e33023b0b3614d0",
-                "reference": "de9b159d37c2cec27b24a1bd0e33023b0b3614d0",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/1177a3032d3991653428de44193eca93f16accc5",
+                "reference": "1177a3032d3991653428de44193eca93f16accc5",
                 "shasum": ""
             },
             "require": {
@@ -4107,7 +4107,7 @@
             "conflict": {
                 "filp/whoops": "<2.18.4",
                 "firebase/php-jwt": "<7.1.0",
-                "guzzlehttp/guzzle": "<7.15.2",
+                "guzzlehttp/guzzle": "<7.15.3",
                 "league/flysystem": "<3.35.2",
                 "league/flysystem-aws-s3-v3": "<3.35.2",
                 "mailgun/mailgun-php": "<4.5.1",
@@ -4121,7 +4121,7 @@
             "require-dev": {
                 "filp/whoops": "^2.18.4",
                 "firebase/php-jwt": "^7.1.0",
-                "guzzlehttp/guzzle": "^7.15.2",
+                "guzzlehttp/guzzle": "^7.15.3",
                 "league/flysystem": "^3.35.2",
                 "league/flysystem-aws-s3-v3": "^3.35.2",
                 "mailgun/mailgun-php": "^4.5.1",
@@ -4140,7 +4140,7 @@
                 "ext-sodium": "Required to use the default Crypt adapters and/or JWT EdDSA Algorithm (*)",
                 "filp/whoops": "Required to use the default Throwable handler (^2.18.4)",
                 "firebase/php-jwt": "Required to use the default Jwt adapter (^7.1.0)",
-                "guzzlehttp/guzzle": "Required to use the default Client adapter (^7.15.2).",
+                "guzzlehttp/guzzle": "Required to use the default Client adapter (^7.15.3).",
                 "league/flysystem": "Required to use the default Filesystem adapter (^3.35.2).",
                 "league/flysystem-aws-s3-v3": "Required to use the s3 Filesystem adapter (^3.35.2)",
                 "mailgun/mailgun-php": "Required to use the Mailgun Mail adapter (^4.5.1).",
@@ -4153,7 +4153,6 @@
                 "twig/twig": "Required to use the Twig View engine (^3.28.0).",
                 "vonage/client-core": "Required to use the default SMS adapter (^4.14.0)."
             },
-            "default-branch": true,
             "type": "project",
             "autoload": {
                 "psr-4": {
@@ -4178,16 +4177,14 @@
             ],
             "support": {
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
-                "source": "https://github.com/valkyrjaio/valkyrja-php/tree/26.x"
+                "source": "https://github.com/valkyrjaio/valkyrja-php/tree/v26.10.0"
             },
-            "time": "2026-08-06T10:13:50+00:00"
+            "time": "2026-08-06T15:23:39+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "valkyrja/valkyrja": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
