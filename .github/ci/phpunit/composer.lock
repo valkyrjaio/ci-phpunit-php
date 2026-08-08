@@ -2966,16 +2966,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v8.1.2",
+            "version": "v8.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "e8ee277684fa228d37795ff160b901eeda1ade5d"
+                "reference": "cb84364d9b47030c6979422d6911f9ea6603f5a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/e8ee277684fa228d37795ff160b901eeda1ade5d",
-                "reference": "e8ee277684fa228d37795ff160b901eeda1ade5d",
+                "url": "https://api.github.com/repos/symfony/config/zipball/cb84364d9b47030c6979422d6911f9ea6603f5a2",
+                "reference": "cb84364d9b47030c6979422d6911f9ea6603f5a2",
                 "shasum": ""
             },
             "require": {
@@ -3020,7 +3020,7 @@
             "description": "Helps you find, load, combine, autofill and validate configuration values of any kind",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/config/tree/v8.1.2"
+                "source": "https://github.com/symfony/config/tree/v8.1.4"
             },
             "funding": [
                 {
@@ -3040,20 +3040,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-22T15:42:13+00:00"
+            "time": "2026-07-31T12:43:13+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "v8.1.2",
+            "version": "v8.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "535e18a1b8925f6c01a55b171d157ab66c2ace15"
+                "reference": "68efa2ebfd9a362951eb5a8b09fd177c66ddec24"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/535e18a1b8925f6c01a55b171d157ab66c2ace15",
-                "reference": "535e18a1b8925f6c01a55b171d157ab66c2ace15",
+                "url": "https://api.github.com/repos/symfony/console/zipball/68efa2ebfd9a362951eb5a8b09fd177c66ddec24",
+                "reference": "68efa2ebfd9a362951eb5a8b09fd177c66ddec24",
                 "shasum": ""
             },
             "require": {
@@ -3120,7 +3120,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v8.1.2"
+                "source": "https://github.com/symfony/console/tree/v8.1.4"
             },
             "funding": [
                 {
@@ -3140,7 +3140,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-07-27T13:58:19+00:00"
+            "time": "2026-07-31T12:43:13+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -4154,16 +4154,16 @@
         },
         {
             "name": "valkyrja/valkyrja",
-            "version": "v26.10.0",
+            "version": "v26.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "1177a3032d3991653428de44193eca93f16accc5"
+                "reference": "12d92ee62d9a832174c2cfa695fd1d23cc001e65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/1177a3032d3991653428de44193eca93f16accc5",
-                "reference": "1177a3032d3991653428de44193eca93f16accc5",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/12d92ee62d9a832174c2cfa695fd1d23cc001e65",
+                "reference": "12d92ee62d9a832174c2cfa695fd1d23cc001e65",
                 "shasum": ""
             },
             "require": {
@@ -4184,7 +4184,7 @@
                 "monolog/monolog": "<3.10.0",
                 "phpmailer/phpmailer": "<7.1.1",
                 "predis/predis": "<3.5.1",
-                "pusher/pusher-php-server": "<7.2.8",
+                "pusher/pusher-php-server": "<7.3.0",
                 "twig/twig": "<3.28.0",
                 "vonage/client-core": "<4.14.0"
             },
@@ -4198,7 +4198,7 @@
                 "monolog/monolog": "^3.10.0",
                 "phpmailer/phpmailer": "^7.1.1",
                 "predis/predis": "^3.5.1",
-                "pusher/pusher-php-server": "^7.2.8",
+                "pusher/pusher-php-server": "^7.3.0",
                 "twig/twig": "^3.28.0",
                 "vonage/client-core": "^4.14.0"
             },
@@ -4218,7 +4218,7 @@
                 "openswoole/core": "Required to use the OpenSwoole worker entry point (^26.2.0).",
                 "phpmailer/phpmailer": "Required to use the default Mail adapter (^7.1.1).",
                 "predis/predis": "Required to use the Redis Cache store (^3.5.1).",
-                "pusher/pusher-php-server": "Required to use the Pusher Broadcast adapter (^7.2.8).",
+                "pusher/pusher-php-server": "Required to use the Pusher Broadcast adapter (^7.3.0).",
                 "spiral/roadrunner-http": "Required to use the RoadRunner worker entry point (^4.1.0).",
                 "twig/twig": "Required to use the Twig View engine (^3.28.0).",
                 "vonage/client-core": "Required to use the default SMS adapter (^4.14.0)."
@@ -4247,9 +4247,9 @@
             ],
             "support": {
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
-                "source": "https://github.com/valkyrjaio/valkyrja-php/tree/v26.10.0"
+                "source": "https://github.com/valkyrjaio/valkyrja-php/tree/v26.11.0"
             },
-            "time": "2026-08-06T15:23:39+00:00"
+            "time": "2026-08-07T15:37:07+00:00"
         }
     ],
     "aliases": [],
