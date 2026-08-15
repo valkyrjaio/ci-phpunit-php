@@ -4,11 +4,11 @@
   },
   "require-dev"       : {
     "fakerphp/faker"              : "^1.24.1",
-    "mockery/mockery"             : "^1.6.12",
+    "mockery/mockery"             : "^1.6.13",
     "php-coveralls/php-coveralls" : "^2.9.1",
     "phpunit/phpcov"              : "^13.1.0",
     "phpunit/phpunit"             : "^13.3.1",
-    "valkyrja/valkyrja"           : "^26.11.4"
+    "valkyrja/valkyrja"           : "^26.12.0"
   },
   "scripts"           : {
     "check"    : "vendor/bin/phpunit --no-coverage --display-all-issues",
