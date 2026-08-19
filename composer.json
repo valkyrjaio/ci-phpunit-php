@@ -18,7 +18,7 @@
   "require"           : {
     "php"                         : ">=8.4",
     "fakerphp/faker"              : "^1.24.1",
-    "mockery/mockery"             : "^1.6.13",
+    "mockery/mockery"             : "^1.6.14",
     "php-coveralls/php-coveralls" : "^2.9.1",
     "phpunit/phpcov"              : "^13.1.0",
     "phpunit/phpunit"             : "^13.3.1"
