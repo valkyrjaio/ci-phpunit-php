@@ -1617,16 +1617,16 @@
         },
         {
             "name": "valkyrja/ci-phparkitect",
-            "version": "v26.7.14",
+            "version": "v26.7.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/ci-phparkitect-php.git",
-                "reference": "0e2527b337aa857bd6d4916f8a785993e82923fb"
+                "reference": "0dbb14b99b033f7f6d81b8df83c42f7cc6494620"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/0e2527b337aa857bd6d4916f8a785993e82923fb",
-                "reference": "0e2527b337aa857bd6d4916f8a785993e82923fb",
+                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/0dbb14b99b033f7f6d81b8df83c42f7cc6494620",
+                "reference": "0dbb14b99b033f7f6d81b8df83c42f7cc6494620",
                 "shasum": ""
             },
             "require": {
@@ -1658,9 +1658,9 @@
             ],
             "support": {
                 "issues": "https://github.com/valkyrjaio/ci-phparkitect-php/issues",
-                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.14"
+                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.15"
             },
-            "time": "2026-08-17T11:21:24+00:00"
+            "time": "2026-08-18T11:20:46+00:00"
         },
         {
             "name": "valkyrja/valkyrja",
@@ -1668,12 +1668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "680336c21e467c4e964e6b8a219ebe0ef0680769"
+                "reference": "4c070af51c05adb0c5c39aac21bc6549618dabec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/680336c21e467c4e964e6b8a219ebe0ef0680769",
-                "reference": "680336c21e467c4e964e6b8a219ebe0ef0680769",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/4c070af51c05adb0c5c39aac21bc6549618dabec",
+                "reference": "4c070af51c05adb0c5c39aac21bc6549618dabec",
                 "shasum": ""
             },
             "require": {
@@ -1760,7 +1760,7 @@
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
                 "source": "https://github.com/valkyrjaio/valkyrja-php/tree/26.x"
             },
-            "time": "2026-08-18T05:03:48+00:00"
+            "time": "2026-08-19T02:14:26+00:00"
         },
         {
             "name": "webmozart/assert",
