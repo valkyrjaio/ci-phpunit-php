@@ -1,6 +1,11 @@
 # Release Notes for 26.x
 
-## [Unreleased](https://github.com/valkyrjaio/phpunit/compare/v26.6.42...26.x)
+## [Unreleased](https://github.com/valkyrjaio/phpunit/compare/v26.6.43...26.x)
+
+## [v26.6.43](https://github.com/valkyrjaio/phpunit/compare/v26.6.42...v26.6.43) - 2026-09-21
+
+* [Dependency] build: Update composer dependencies by [@valkyrja-volundr](https://github.com/valkyrja-volundr)[bot] in https://github.com/valkyrjaio/ci-phpunit-php/pull/311
+* [Dependency] build: Update composer dependencies by [@valkyrja-volundr](https://github.com/valkyrja-volundr)[bot] in https://github.com/valkyrjaio/ci-phpunit-php/pull/312
 
 ## [v26.6.42](https://github.com/valkyrjaio/phpunit/compare/v26.6.41...v26.6.42) - 2026-09-20
 
