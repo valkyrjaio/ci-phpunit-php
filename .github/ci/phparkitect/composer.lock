@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "991daf6ce34ff6b4012bc8b0648a19db",
+    "content-hash": "9f3d41b78e58b2d061e64afac5136cbc",
     "packages": [],
     "packages-dev": [
         {
@@ -1668,12 +1668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "21a44d565b84d8b19eb64692dfae9866c477782a"
+                "reference": "e3c85c63ee00b76069d113631f20dded16843314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/21a44d565b84d8b19eb64692dfae9866c477782a",
-                "reference": "21a44d565b84d8b19eb64692dfae9866c477782a",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/e3c85c63ee00b76069d113631f20dded16843314",
+                "reference": "e3c85c63ee00b76069d113631f20dded16843314",
                 "shasum": ""
             },
             "require": {
@@ -1760,7 +1760,7 @@
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
                 "source": "https://github.com/valkyrjaio/valkyrja-php/tree/26.x"
             },
-            "time": "2026-09-21T14:28:11+00:00"
+            "time": "2026-09-21T18:17:23+00:00"
         },
         {
             "name": "webmozart/assert",
