@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "316e768ad49ab63eb4037fbfd5f846cb",
+    "content-hash": "35c0ab675d8663df27ba90a4ebc37acf",
     "packages": [],
     "packages-dev": [
         {
@@ -227,16 +227,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "2.3.5",
+            "version": "2.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "148cefffaf0233e4c08cc13db8a195a56dd6dfe9"
+                "reference": "1427af4647235b4a73b13940b1f1258d3584f36e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/148cefffaf0233e4c08cc13db8a195a56dd6dfe9",
-                "reference": "148cefffaf0233e4c08cc13db8a195a56dd6dfe9",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/1427af4647235b4a73b13940b1f1258d3584f36e",
+                "reference": "1427af4647235b4a73b13940b1f1258d3584f36e",
                 "shasum": ""
             },
             "require": {
@@ -268,9 +268,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.3.5"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/2.3.6"
             },
-            "time": "2026-08-31T16:05:28+00:00"
+            "time": "2026-09-27T20:07:45+00:00"
         },
         {
             "name": "psr/container",
@@ -1617,16 +1617,16 @@
         },
         {
             "name": "valkyrja/ci-phparkitect",
-            "version": "v26.7.52",
+            "version": "v26.7.53",
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/ci-phparkitect-php.git",
-                "reference": "2ff7ff220b6f43926fd8ebc1c0662467fa93eefc"
+                "reference": "fd1d480e10d18659f7df343cf0ab1df238c424bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/2ff7ff220b6f43926fd8ebc1c0662467fa93eefc",
-                "reference": "2ff7ff220b6f43926fd8ebc1c0662467fa93eefc",
+                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/fd1d480e10d18659f7df343cf0ab1df238c424bf",
+                "reference": "fd1d480e10d18659f7df343cf0ab1df238c424bf",
                 "shasum": ""
             },
             "require": {
@@ -1658,9 +1658,9 @@
             ],
             "support": {
                 "issues": "https://github.com/valkyrjaio/ci-phparkitect-php/issues",
-                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.52"
+                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.53"
             },
-            "time": "2026-09-26T14:53:45+00:00"
+            "time": "2026-09-27T15:32:44+00:00"
         },
         {
             "name": "valkyrja/valkyrja",
@@ -1668,12 +1668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "5349e4c463a7756eeb2a47e4ad24af94b75b3785"
+                "reference": "1af5ae391631565b77f2f00df1b727aaff82be35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/5349e4c463a7756eeb2a47e4ad24af94b75b3785",
-                "reference": "5349e4c463a7756eeb2a47e4ad24af94b75b3785",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/1af5ae391631565b77f2f00df1b727aaff82be35",
+                "reference": "1af5ae391631565b77f2f00df1b727aaff82be35",
                 "shasum": ""
             },
             "require": {
@@ -1760,7 +1760,7 @@
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
                 "source": "https://github.com/valkyrjaio/valkyrja-php/tree/26.x"
             },
-            "time": "2026-09-27T14:16:11+00:00"
+            "time": "2026-09-27T16:53:09+00:00"
         },
         {
             "name": "webmozart/assert",
