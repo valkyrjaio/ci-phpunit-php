@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35c0ab675d8663df27ba90a4ebc37acf",
+    "content-hash": "05b304b6b60c6e115af399be0a84dbcf",
     "packages": [],
     "packages-dev": [
         {
@@ -536,16 +536,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v8.1.7",
+            "version": "v8.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "29afb89f4e941f68a6e90f28e3f52ff1f6793a7d"
+                "reference": "4b81146e3ee248ea969186f85499b54fbc78db08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/29afb89f4e941f68a6e90f28e3f52ff1f6793a7d",
-                "reference": "29afb89f4e941f68a6e90f28e3f52ff1f6793a7d",
+                "url": "https://api.github.com/repos/symfony/console/zipball/4b81146e3ee248ea969186f85499b54fbc78db08",
+                "reference": "4b81146e3ee248ea969186f85499b54fbc78db08",
                 "shasum": ""
             },
             "require": {
@@ -612,7 +612,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v8.1.7"
+                "source": "https://github.com/symfony/console/tree/v8.1.8"
             },
             "funding": [
                 {
@@ -632,7 +632,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-13T10:55:57+00:00"
+            "time": "2026-09-18T16:00:27+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -873,16 +873,16 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v8.1.7",
+            "version": "v8.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "4fbe46a3eb64abf8a57f0364075b91f4a233e062"
+                "reference": "bd4fed193a3132c91c5c93595cbfc78988915822"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/4fbe46a3eb64abf8a57f0364075b91f4a233e062",
-                "reference": "4fbe46a3eb64abf8a57f0364075b91f4a233e062",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/bd4fed193a3132c91c5c93595cbfc78988915822",
+                "reference": "bd4fed193a3132c91c5c93595cbfc78988915822",
                 "shasum": ""
             },
             "require": {
@@ -917,7 +917,7 @@
             "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v8.1.7"
+                "source": "https://github.com/symfony/finder/tree/v8.1.8"
             },
             "funding": [
                 {
@@ -937,7 +937,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-10T19:14:39+00:00"
+            "time": "2026-09-26T06:33:49+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1617,16 +1617,16 @@
         },
         {
             "name": "valkyrja/ci-phparkitect",
-            "version": "v26.7.53",
+            "version": "v26.7.54",
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/ci-phparkitect-php.git",
-                "reference": "fd1d480e10d18659f7df343cf0ab1df238c424bf"
+                "reference": "5e2e98c15d109d914ec1984d0558add340ed6490"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/fd1d480e10d18659f7df343cf0ab1df238c424bf",
-                "reference": "fd1d480e10d18659f7df343cf0ab1df238c424bf",
+                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/5e2e98c15d109d914ec1984d0558add340ed6490",
+                "reference": "5e2e98c15d109d914ec1984d0558add340ed6490",
                 "shasum": ""
             },
             "require": {
@@ -1658,9 +1658,9 @@
             ],
             "support": {
                 "issues": "https://github.com/valkyrjaio/ci-phparkitect-php/issues",
-                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.53"
+                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.54"
             },
-            "time": "2026-09-27T15:32:44+00:00"
+            "time": "2026-09-28T18:25:31+00:00"
         },
         {
             "name": "valkyrja/valkyrja",
@@ -1668,12 +1668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "df959186d9e7feb911986e625b156b3dc0ec2c6e"
+                "reference": "7a74a991241a97970a1cfbe681503f1fde0c5b5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/df959186d9e7feb911986e625b156b3dc0ec2c6e",
-                "reference": "df959186d9e7feb911986e625b156b3dc0ec2c6e",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/7a74a991241a97970a1cfbe681503f1fde0c5b5a",
+                "reference": "7a74a991241a97970a1cfbe681503f1fde0c5b5a",
                 "shasum": ""
             },
             "require": {
@@ -1686,7 +1686,7 @@
             },
             "conflict": {
                 "filp/whoops": "<2.18.5",
-                "firebase/php-jwt": "<7.2.0",
+                "firebase/php-jwt": "<7.2.1",
                 "guzzlehttp/guzzle": "<7.15.5",
                 "league/flysystem": "<3.36.0",
                 "league/flysystem-aws-s3-v3": "<3.35.3",
@@ -1700,7 +1700,7 @@
             },
             "require-dev": {
                 "filp/whoops": "^2.18.5",
-                "firebase/php-jwt": "^7.2.0",
+                "firebase/php-jwt": "^7.2.1",
                 "guzzlehttp/guzzle": "^7.15.5",
                 "league/flysystem": "^3.36.0",
                 "league/flysystem-aws-s3-v3": "^3.35.3",
@@ -1719,7 +1719,7 @@
                 "ext-redis": "Required to use the default Cache store (^4.0|^5.0).",
                 "ext-sodium": "Required to use the default Crypt adapters and/or JWT EdDSA Algorithm (*)",
                 "filp/whoops": "Required to use the default Throwable handler (^2.18.5)",
-                "firebase/php-jwt": "Required to use the default Jwt adapter (^7.2.0)",
+                "firebase/php-jwt": "Required to use the default Jwt adapter (^7.2.1)",
                 "guzzlehttp/guzzle": "Required to use the default Client adapter (^7.15.5).",
                 "league/flysystem": "Required to use the default Filesystem adapter (^3.36.0).",
                 "league/flysystem-aws-s3-v3": "Required to use the s3 Filesystem adapter (^3.35.3)",
@@ -1760,7 +1760,7 @@
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
                 "source": "https://github.com/valkyrjaio/valkyrja-php/tree/26.x"
             },
-            "time": "2026-09-28T17:47:25+00:00"
+            "time": "2026-09-28T19:37:30+00:00"
         },
         {
             "name": "webmozart/assert",
