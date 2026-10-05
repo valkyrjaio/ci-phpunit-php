@@ -1241,28 +1241,28 @@
         },
         {
             "name": "phpunit/phpcov",
-            "version": "13.1.1",
+            "version": "13.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpcov.git",
-                "reference": "0261bd7228ac02b6e40ef1bd536695237ab4276a"
+                "reference": "b891b5197eae0887677ef0ca67a781a3d383d734"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpcov/zipball/0261bd7228ac02b6e40ef1bd536695237ab4276a",
-                "reference": "0261bd7228ac02b6e40ef1bd536695237ab4276a",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpcov/zipball/b891b5197eae0887677ef0ca67a781a3d383d734",
+                "reference": "b891b5197eae0887677ef0ca67a781a3d383d734",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.4",
-                "phpunit/php-code-coverage": "^14.3.5",
+                "phpunit/php-code-coverage": "^14.4.1",
                 "phpunit/php-file-iterator": "^7.0.2",
                 "sebastian/cli-parser": "^5.0.1",
                 "sebastian/diff": "^9.0.1",
-                "sebastian/version": "^7.0.0"
+                "sebastian/version": "^7.0.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^13.3.3"
+                "phpunit/phpunit": "^13.4.0"
             },
             "bin": [
                 "phpcov"
@@ -1293,7 +1293,7 @@
             "homepage": "https://github.com/sebastianbergmann/phpcov",
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpcov/issues",
-                "source": "https://github.com/sebastianbergmann/phpcov/tree/13.1.1"
+                "source": "https://github.com/sebastianbergmann/phpcov/tree/13.2.0"
             },
             "funding": [
                 {
@@ -1301,20 +1301,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-25T08:44:54+00:00"
+            "time": "2026-10-05T05:39:10+00:00"
         },
         {
             "name": "phpunit/phpunit",
-            "version": "13.4.0",
+            "version": "13.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ef714df238ae4d050e74efaa23f7c428bd01034e"
+                "reference": "ccde40327c501eebff192614b0dcf11806418901"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ef714df238ae4d050e74efaa23f7c428bd01034e",
-                "reference": "ef714df238ae4d050e74efaa23f7c428bd01034e",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ccde40327c501eebff192614b0dcf11806418901",
+                "reference": "ccde40327c501eebff192614b0dcf11806418901",
                 "shasum": ""
             },
             "require": {
@@ -1328,10 +1328,10 @@
                 "phar-io/manifest": "^2.0.4",
                 "phar-io/version": "^3.2.1",
                 "php": ">=8.4.1",
-                "phpunit/php-code-coverage": "^14.4",
+                "phpunit/php-code-coverage": "^14.4.1",
                 "phpunit/php-file-iterator": "^7.0.2",
                 "phpunit/php-invoker": "^7.0.0",
-                "phpunit/php-text-template": "^6.0.0",
+                "phpunit/php-text-template": "^6.0.1",
                 "phpunit/php-timer": "^9.0.0",
                 "sebastian/cli-parser": "^5.0.1",
                 "sebastian/comparator": "^8.4",
@@ -1344,7 +1344,7 @@
                 "sebastian/object-enumerator": "^8.1.0",
                 "sebastian/recursion-context": "^8.0.1",
                 "sebastian/type": "^7.0.2",
-                "sebastian/version": "^7.0.0",
+                "sebastian/version": "^7.0.1",
                 "staabm/side-effects-detector": "^1.0.5"
             },
             "bin": [
@@ -1385,7 +1385,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/13.4.0"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/13.4.1"
             },
             "funding": [
                 {
@@ -1393,7 +1393,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-10-02T03:20:44+00:00"
+            "time": "2026-10-05T05:51:21+00:00"
         },
         {
             "name": "psr/container",
@@ -4156,16 +4156,16 @@
         },
         {
             "name": "valkyrja/valkyrja",
-            "version": "v26.17.1",
+            "version": "v26.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "c95f15c56ed2382f60676d8c141372f39bb6f166"
+                "reference": "819afc87dab6ce3bf9714847560bba48c6ba1a63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/c95f15c56ed2382f60676d8c141372f39bb6f166",
-                "reference": "c95f15c56ed2382f60676d8c141372f39bb6f166",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/819afc87dab6ce3bf9714847560bba48c6ba1a63",
+                "reference": "819afc87dab6ce3bf9714847560bba48c6ba1a63",
                 "shasum": ""
             },
             "require": {
@@ -4177,7 +4177,7 @@
                 "psr/log": "^3.0.2"
             },
             "conflict": {
-                "filp/whoops": "<2.18.5",
+                "filp/whoops": "<2.18.6",
                 "firebase/php-jwt": "<7.2.1",
                 "guzzlehttp/guzzle": "<7.15.5",
                 "league/flysystem": "<3.36.0",
@@ -4191,7 +4191,7 @@
                 "vonage/client-core": "<4.14.0"
             },
             "require-dev": {
-                "filp/whoops": "^2.18.5",
+                "filp/whoops": "^2.18.6",
                 "firebase/php-jwt": "^7.2.1",
                 "guzzlehttp/guzzle": "^7.15.5",
                 "league/flysystem": "^3.36.0",
@@ -4210,7 +4210,7 @@
                 "ext-pdo": "Required to use the default ORM adapter (*)",
                 "ext-redis": "Required to use the default Cache store (^4.0|^5.0).",
                 "ext-sodium": "Required to use the default Crypt adapters and/or JWT EdDSA Algorithm (*)",
-                "filp/whoops": "Required to use the default Throwable handler (^2.18.5)",
+                "filp/whoops": "Required to use the default Throwable handler (^2.18.6)",
                 "firebase/php-jwt": "Required to use the default Jwt adapter (^7.2.1)",
                 "guzzlehttp/guzzle": "Required to use the default Client adapter (^7.15.5).",
                 "league/flysystem": "Required to use the default Filesystem adapter (^3.36.0).",
@@ -4249,9 +4249,9 @@
             ],
             "support": {
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
-                "source": "https://github.com/valkyrjaio/valkyrja-php/tree/v26.17.1"
+                "source": "https://github.com/valkyrjaio/valkyrja-php/tree/v26.17.2"
             },
-            "time": "2026-10-03T16:09:38+00:00"
+            "time": "2026-10-04T16:49:17+00:00"
         }
     ],
     "aliases": [],
