@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac728fc86fe6504052e15f8207d5442a",
+    "content-hash": "a28bb1d5b102e8ce07faba040dcbaa05",
     "packages": [],
     "packages-dev": [
         {
@@ -1617,16 +1617,16 @@
         },
         {
             "name": "valkyrja/ci-phparkitect",
-            "version": "v26.7.62",
+            "version": "v26.7.63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/ci-phparkitect-php.git",
-                "reference": "d3a5e80060c96e547001b0a4a7d686dfe0fbc67b"
+                "reference": "7a649105cade867e70377472c8d554444d2fda8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/d3a5e80060c96e547001b0a4a7d686dfe0fbc67b",
-                "reference": "d3a5e80060c96e547001b0a4a7d686dfe0fbc67b",
+                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/7a649105cade867e70377472c8d554444d2fda8a",
+                "reference": "7a649105cade867e70377472c8d554444d2fda8a",
                 "shasum": ""
             },
             "require": {
@@ -1658,9 +1658,9 @@
             ],
             "support": {
                 "issues": "https://github.com/valkyrjaio/ci-phparkitect-php/issues",
-                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.62"
+                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.63"
             },
-            "time": "2026-10-07T17:44:43+00:00"
+            "time": "2026-10-08T17:45:52+00:00"
         },
         {
             "name": "valkyrja/valkyrja",
@@ -1668,12 +1668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "c48cb362fae1c999d31a6f5bcca83c3a1c8755d0"
+                "reference": "ed94fee12cdc2cc14992b2c17f67476f0f953762"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/c48cb362fae1c999d31a6f5bcca83c3a1c8755d0",
-                "reference": "c48cb362fae1c999d31a6f5bcca83c3a1c8755d0",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/ed94fee12cdc2cc14992b2c17f67476f0f953762",
+                "reference": "ed94fee12cdc2cc14992b2c17f67476f0f953762",
                 "shasum": ""
             },
             "require": {
@@ -1693,7 +1693,7 @@
                 "mailgun/mailgun-php": "<4.5.2",
                 "monolog/monolog": "<3.12.1",
                 "phpmailer/phpmailer": "<7.1.1",
-                "predis/predis": "<3.6.1",
+                "predis/predis": "<3.7.0",
                 "pusher/pusher-php-server": "<7.3.0",
                 "twig/twig": "<3.30.0",
                 "vonage/client-core": "<4.14.0"
@@ -1707,7 +1707,7 @@
                 "mailgun/mailgun-php": "^4.5.2",
                 "monolog/monolog": "^3.12.1",
                 "phpmailer/phpmailer": "^7.1.1",
-                "predis/predis": "^3.6.1",
+                "predis/predis": "^3.7.0",
                 "pusher/pusher-php-server": "^7.3.0",
                 "twig/twig": "^3.30.0",
                 "vonage/client-core": "^4.14.0"
@@ -1727,7 +1727,7 @@
                 "monolog/monolog": "Required to use the default Log adapter (^3.12.1).",
                 "openswoole/core": "Required to use the OpenSwoole worker entry point (^26.2.0).",
                 "phpmailer/phpmailer": "Required to use the default Mail adapter (^7.1.1).",
-                "predis/predis": "Required to use the Redis Cache store (^3.6.1).",
+                "predis/predis": "Required to use the Redis Cache store (^3.7.0).",
                 "pusher/pusher-php-server": "Required to use the Pusher Broadcast adapter (^7.3.0).",
                 "spiral/roadrunner-http": "Required to use the RoadRunner worker entry point (^4.1.0).",
                 "twig/twig": "Required to use the Twig View engine (^3.30.0).",
@@ -1760,7 +1760,7 @@
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
                 "source": "https://github.com/valkyrjaio/valkyrja-php/tree/26.x"
             },
-            "time": "2026-10-08T17:21:02+00:00"
+            "time": "2026-10-09T05:15:07+00:00"
         },
         {
             "name": "webmozart/assert",
