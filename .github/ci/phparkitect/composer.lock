@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0c526260034d2243c222e9c38614bb5",
+    "content-hash": "e34f81e491f239f929e5e93496420f03",
     "packages": [],
     "packages-dev": [
         {
@@ -1617,16 +1617,16 @@
         },
         {
             "name": "valkyrja/ci-phparkitect",
-            "version": "v26.7.65",
+            "version": "v26.7.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/ci-phparkitect-php.git",
-                "reference": "f8a1fa13331b0c3f49561265a1b5dc8c11c0e792"
+                "reference": "d9dba74fe643478fd3ba32c80d7027c1982bbca1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/f8a1fa13331b0c3f49561265a1b5dc8c11c0e792",
-                "reference": "f8a1fa13331b0c3f49561265a1b5dc8c11c0e792",
+                "url": "https://api.github.com/repos/valkyrjaio/ci-phparkitect-php/zipball/d9dba74fe643478fd3ba32c80d7027c1982bbca1",
+                "reference": "d9dba74fe643478fd3ba32c80d7027c1982bbca1",
                 "shasum": ""
             },
             "require": {
@@ -1658,9 +1658,9 @@
             ],
             "support": {
                 "issues": "https://github.com/valkyrjaio/ci-phparkitect-php/issues",
-                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.65"
+                "source": "https://github.com/valkyrjaio/ci-phparkitect-php/tree/v26.7.66"
             },
-            "time": "2026-10-10T16:09:40+00:00"
+            "time": "2026-10-11T16:31:48+00:00"
         },
         {
             "name": "valkyrja/valkyrja",
@@ -1668,12 +1668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/valkyrjaio/valkyrja-php.git",
-                "reference": "24328f0aae46452b39633e89b0f9f2bc02495e56"
+                "reference": "3ccf8ac3d8aac8bc5fea0d6ecaaa2b90ddc85576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/24328f0aae46452b39633e89b0f9f2bc02495e56",
-                "reference": "24328f0aae46452b39633e89b0f9f2bc02495e56",
+                "url": "https://api.github.com/repos/valkyrjaio/valkyrja-php/zipball/3ccf8ac3d8aac8bc5fea0d6ecaaa2b90ddc85576",
+                "reference": "3ccf8ac3d8aac8bc5fea0d6ecaaa2b90ddc85576",
                 "shasum": ""
             },
             "require": {
@@ -1685,6 +1685,7 @@
                 "psr/log": "^3.0.2"
             },
             "conflict": {
+                "async-aws/sqs": "<2.9.0",
                 "filp/whoops": "<2.18.6",
                 "firebase/php-jwt": "<7.2.1",
                 "guzzlehttp/guzzle": "<7.15.5",
@@ -1692,6 +1693,7 @@
                 "league/flysystem-aws-s3-v3": "<3.35.3",
                 "mailgun/mailgun-php": "<4.5.2",
                 "monolog/monolog": "<3.12.1",
+                "php-amqplib/php-amqplib": "<3.7.4",
                 "phpmailer/phpmailer": "<7.1.1",
                 "predis/predis": "<3.7.0",
                 "pusher/pusher-php-server": "<7.3.0",
@@ -1699,6 +1701,7 @@
                 "vonage/client-core": "<4.14.0"
             },
             "require-dev": {
+                "async-aws/sqs": "^2.9.0",
                 "filp/whoops": "^2.18.6",
                 "firebase/php-jwt": "^7.2.1",
                 "guzzlehttp/guzzle": "^7.15.5",
@@ -1706,6 +1709,7 @@
                 "league/flysystem-aws-s3-v3": "^3.35.3",
                 "mailgun/mailgun-php": "^4.5.2",
                 "monolog/monolog": "^3.12.1",
+                "php-amqplib/php-amqplib": "^3.7.4",
                 "phpmailer/phpmailer": "^7.1.1",
                 "predis/predis": "^3.7.0",
                 "pusher/pusher-php-server": "^7.3.0",
@@ -1713,6 +1717,7 @@
                 "vonage/client-core": "^4.14.0"
             },
             "suggest": {
+                "async-aws/sqs": "Required to use the SQS Queue processor (^2.9.0).",
                 "ext-curl": "Required to use the default Client adapter (*)",
                 "ext-openswoole": "Required to use the OpenSwoole worker entry point (>=26.2.0).",
                 "ext-pdo": "Required to use the default ORM adapter (*)",
@@ -1726,8 +1731,9 @@
                 "mailgun/mailgun-php": "Required to use the Mailgun Mail adapter (^4.5.2).",
                 "monolog/monolog": "Required to use the default Log adapter (^3.12.1).",
                 "openswoole/core": "Required to use the OpenSwoole worker entry point (^26.2.0).",
+                "php-amqplib/php-amqplib": "Required to use the AMQP Queue processor (^3.7.4).",
                 "phpmailer/phpmailer": "Required to use the default Mail adapter (^7.1.1).",
-                "predis/predis": "Required to use the Redis Cache store (^3.7.0).",
+                "predis/predis": "Required to use the Redis Cache store and the Redis queue client (^3.7.0).",
                 "pusher/pusher-php-server": "Required to use the Pusher Broadcast adapter (^7.3.0).",
                 "spiral/roadrunner-http": "Required to use the RoadRunner worker entry point (^4.1.0).",
                 "twig/twig": "Required to use the Twig View engine (^3.30.0).",
@@ -1760,7 +1766,7 @@
                 "issues": "https://github.com/valkyrjaio/valkyrja-php/issues",
                 "source": "https://github.com/valkyrjaio/valkyrja-php/tree/26.x"
             },
-            "time": "2026-10-11T13:21:35+00:00"
+            "time": "2026-10-12T16:19:00+00:00"
         },
         {
             "name": "webmozart/assert",
