@@ -7,7 +7,7 @@
     "mockery/mockery"             : "^1.6.15",
     "php-coveralls/php-coveralls" : "^2.9.1",
     "phpunit/phpcov"              : "^13.2.0",
-    "phpunit/phpunit"             : "^13.4.2",
+    "phpunit/phpunit"             : "^13.4.3",
     "valkyrja/valkyrja"           : "^26.19.1"
   },
   "scripts"           : {
