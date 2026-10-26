@@ -8,7 +8,7 @@
     "php-coveralls/php-coveralls" : "^2.9.1",
     "phpunit/phpcov"              : "^13.2.0",
     "phpunit/phpunit"             : "^13.4.3",
-    "valkyrja/valkyrja"           : "^26.24.1"
+    "valkyrja/valkyrja"           : "^26.24.2"
   },
   "scripts"           : {
     "check"    : "vendor/bin/phpunit --no-coverage --display-all-issues",
