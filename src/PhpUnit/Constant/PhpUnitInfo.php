@@ -26,5 +26,5 @@ final class PhpUnitInfo
      *
      * @var non-empty-string
      */
-    public const string VERSION_BUILD_DATE_TIME = 'November 20 2026 11:56:14 MST';
+    public const string VERSION_BUILD_DATE_TIME = 'November 21 2026 10:51:10 MST';
 }
